@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 2;
+}
+
+.contact-button {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+.contact-button:hover {
+    opacity: 1;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background2.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px) brightness(0.8);
+    transform: scale(1.05);
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.waitlist-button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.waitlist-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+.app-store-button img {
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.app-store-button:hover img {
+    transform: translateY(-2px);
+}
+
+footer {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    font-size: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .waitlist-button {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+    header {
+        top: 20px;
+        right: 20px;
+    }
+    footer {
+        bottom: 20px;
+        font-size: 0.4rem;
+    }
+} 

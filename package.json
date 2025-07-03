@@ -1,0 +1,28 @@
+{
+  "name": "misamisa-website",
+  "version": "1.0.0",
+  "description": "MisaMisa landing page website",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "cd public && python3 -m http.server 8000",
+    "serve": "cd public && python3 -m http.server 8000",
+    "dev": "cd public && python3 -m http.server 8000"
+  },
+  "keywords": [
+    "misamisa",
+    "landing-page",
+    "website",
+    "static-site"
+  ],
+  "author": "Mauro Kjaer <maurokjaer@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maurokjaer/misamisa-website.git"
+  },
+  "homepage": "https://maurokjaer.github.io/misamisa-website",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
